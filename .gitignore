@@ -1,0 +1,17 @@
+# Source resumes and exports
+*.docx
+*.doc
+*.pdf
+*.zip
+
+# Local working files
+upload/
+docx_qa/
+docx_extract/
+tmp/
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo

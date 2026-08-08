@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Professional profile</title>
+  <meta name="description" content="Private professional profile shared by direct link.">
+  <meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex, nocache">
+  <meta name="googlebot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="yandex" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="bingbot" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; connect-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="format-detection" content="telephone=yes">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="styles.css">
+  <script src="data.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.8 12 3l9 7.8v9.7a.5.5 0 0 1-.5.5H15v-6H9v6H3.5a.5.5 0 0 1-.5-.5z"/></symbol>
+    <symbol id="i-work" viewBox="0 0 24 24"><path d="M9 5V3.8A1.8 1.8 0 0 1 10.8 2h2.4A1.8 1.8 0 0 1 15 3.8V5h5a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2zm2 0h2V4h-2zm-7 6v7h16v-7l-6 2v1h-4v-1zm0-4v2l6 2h4l6-2V7z"/></symbol>
+    <symbol id="i-school" viewBox="0 0 24 24"><path d="m2 8 10-5 10 5-10 5zm4 3.1V16c2.8 2.4 9.2 2.4 12 0v-4.9l-6 3zm14-.9V16h2V9.2z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M3 4h18a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m9 8L3 6v12h18V6z"/></symbol>
+    <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.6 2h3.1l1.2 5-2 1.6a16 16 0 0 0 6.5 6.5l1.6-2 5 1.2v3.1c0 2.5-2 4.6-4.6 4.6C8.9 22 2 15.1 2 6.6 2 4 4 2 6.6 2"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 1a8 8 0 0 1 8 8c0 6.1-8 14-8 14S4 15.1 4 9a8 8 0 0 1 8-8m0 5a3 3 0 1 0 0 6 3 3 0 0 0 0-6"/></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m9.2 17.5-5-5 2.1-2.1 2.9 2.9 8.5-8.5 2.1 2.1z"/></symbol>
+    <symbol id="i-verified" viewBox="0 0 24 24">
+      <path fill="#0a66c2" d="m12 1.5 2.2 1.8 2.8-.2.9 2.7 2.4 1.5-.8 2.7.8 2.7-2.4 1.5-.9 2.7-2.8-.2-2.2 1.8-2.2-1.8-2.8.2-.9-2.7-2.4-1.5.8-2.7-.8-2.7 2.4-1.5.9-2.7 2.8.2z"/>
+      <path fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m8.1 12.2 2.5 2.5 5.4-5.4"/>
+    </symbol>
+  </svg>
+
+  <header class="topbar">
+    <div class="topbar__inner">
+      <a class="brand" href="#top" aria-label="Professional profile">PL</a>
+      <nav class="main-nav" aria-label="Profile sections">
+        <a href="#top"><svg><use href="#i-home"/></svg><span data-ui="profile">Profile</span></a>
+        <a href="#experience"><svg><use href="#i-work"/></svg><span data-ui="experience">Experience</span></a>
+        <a href="#education"><svg><use href="#i-school"/></svg><span data-ui="education">Education</span></a>
+      </nav>
+      <div class="language-switch" role="group" aria-label="Language">
+        <button type="button" data-set-language="en" aria-pressed="true"><span aria-hidden="true">🇬🇧</span> English</button>
+        <button type="button" data-set-language="ru" aria-pressed="false"><span aria-hidden="true">🇷🇺</span> Русский</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="page-shell">
+    <div class="content-column">
+      <section class="card profile-card" aria-labelledby="profile-name">
+        <div class="cover" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="profile-card__body">
+          <img class="avatar" src="assets/profile.jpg" alt="Profile photo">
+          <div class="profile-actions">
+            <a class="button button--primary" id="message-link"><svg><use href="#i-mail"/></svg><span data-ui="message">Message</span></a>
+          </div>
+          <div class="profile-name-row">
+            <h1 id="profile-name">Professional profile</h1>
+            <span class="verified-badge" id="verified-badge" role="img" aria-label="Verified profile" title="Verified profile"><svg><use href="#i-verified"/></svg></span>
+          </div>
+          <p class="headline" id="profile-headline"></p>
+          <div class="identity-lines" id="identity-lines"></div>
+        </div>
+      </section>
+
+      <section class="card section-card" id="about">
+        <h2 id="profile-title">Profile</h2>
+        <div class="prose" id="profile-paragraphs"></div>
+        <div class="metrics" id="metrics" role="group" aria-label="Career highlights"></div>
+      </section>
+
+      <section class="card section-card" id="experience">
+        <h2 id="experience-title">Experience</h2>
+        <div id="experience-list"></div>
+      </section>
+
+      <section class="card section-card" id="education">
+        <h2 id="education-title">Education</h2>
+        <div id="education-list"></div>
+      </section>
+
+      <section class="card section-card" id="training">
+        <h2 id="training-title">Training</h2>
+        <div id="training-content"></div>
+      </section>
+
+      <section class="card section-card" id="skills">
+        <h2 id="skills-title">Skills</h2>
+        <div class="skill-list" id="skills-text"></div>
+      </section>
+
+      <section class="card section-card small-section" id="languages">
+        <h2 id="languages-title">Languages</h2>
+        <div class="language-lines"><p><strong id="languages-text"></strong></p></div>
+      </section>
+
+      <section class="card section-card small-section" id="hobbies">
+        <h2 id="hobbies-title">Hobbies</h2>
+        <p class="interest"><span class="interest-icon" aria-hidden="true">⚽</span><span id="hobbies-text"></span></p>
+      </section>
+    </div>
+
+    <aside class="sidebar" aria-label="Contact details">
+      <section class="card sidebar-card">
+        <h2 data-ui="contact">Contact</h2>
+        <a id="email-link"><svg><use href="#i-mail"/></svg><span id="email-text"></span></a>
+        <a id="phone-link"><svg><use href="#i-phone"/></svg><span id="phone-text"></span></a>
+        <p><svg><use href="#i-pin"/></svg><span id="personal-text"></span></p>
+        <div class="sidebar-details" id="contact-details"></div>
+      </section>
+      <section class="card sidebar-card privacy-card">
+        <h2 id="privacy-title">Shared privately</h2>
+        <p id="privacy-text"></p>
+      </section>
+    </aside>
+  </main>
+
+  <footer><p>© <span id="year"></span></p></footer>
+</body>
+</html>

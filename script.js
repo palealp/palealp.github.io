@@ -213,15 +213,7 @@
   }
 
   function profileParagraphs(language, data) {
-    if (language !== 'ru') return data.profile.paragraphs;
-    const paragraphs = data.profile.paragraphs;
-    return [
-      paragraphs[0],
-      [paragraphs[1], paragraphs[2]].map((paragraph) => paragraph.trim()).join(' '),
-      ...paragraphs.slice(3, 5),
-      [paragraphs[5], paragraphs[6], paragraphs[7]].map((paragraph) => paragraph.trim()).join(' '),
-      [paragraphs[8], paragraphs[9]].map((paragraph) => paragraph.trim()).join(' '),
-    ];
+    return data.profile.paragraphs;
   }
 
   function render(language) {

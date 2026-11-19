@@ -73,6 +73,7 @@ a { color: var(--blue); }
 .company-mark__fallback { display: none; width: 100%; height: 100%; place-items: center; }
 .company-mark.is-fallback { border-color: transparent; }
 .company-mark.is-fallback .company-mark__fallback { display: grid; }
+.company-mark--palestra { background: #1f2937; }
 .company-mark--hackski.is-fallback { background: #0f526c; }
 .company-mark--bank { background: #204e86; }
 .company-mark--kdv { background: #d52b38; }

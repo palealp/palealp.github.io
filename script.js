@@ -41,6 +41,13 @@
   };
 
   const organizations = {
+    palestra: {
+      href: null,
+      src: null,
+      alt: 'Palestra',
+      fallback: 'P',
+      className: 'company-mark--palestra',
+    },
     hackski: {
       href: 'https://hackski.com/',
       src: 'assets/logo-hackski.svg',
@@ -151,7 +158,7 @@
   function renderExperience(data) {
     const host = document.getElementById('experience-list');
     host.replaceChildren();
-    const marks = [organizations.hackski, organizations.bank, organizations.kdv, organizations.gpb];
+    const marks = [organizations.palestra, organizations.hackski, organizations.bank, organizations.kdv, organizations.gpb];
     data.jobs.forEach((job, index) => {
       const article = element('article', `timeline-item${index === data.jobs.length - 1 ? ' timeline-item--last' : ''}`);
       const copy = element('div', 'timeline-copy');
@@ -210,10 +217,10 @@
     const paragraphs = data.profile.paragraphs;
     return [
       paragraphs[0],
-      [paragraphs[1], paragraphs[2], paragraphs[3]].map((paragraph) => paragraph.trim()).join(' '),
-      paragraphs[4],
+      [paragraphs[1], paragraphs[2]].map((paragraph) => paragraph.trim()).join(' '),
+      ...paragraphs.slice(3, 5),
       [paragraphs[5], paragraphs[6], paragraphs[7]].map((paragraph) => paragraph.trim()).join(' '),
-      paragraphs[8],
+      [paragraphs[8], paragraphs[9]].map((paragraph) => paragraph.trim()).join(' '),
     ];
   }
 

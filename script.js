@@ -18,7 +18,7 @@
       metrics: [
         ['18', 'years of experience in cybersecurity'],
         ['9', 'years in leadership positions'],
-        ['35+', 'team members'],
+        ['35+', 'largest team led'],
         ['1500+', 'b2b clients'],
       ],
     },
@@ -34,7 +34,7 @@
       metrics: [
         ['18', 'лет опыта в кибербезопасности'],
         ['9', 'лет опыта на руководящих позициях'],
-        ['35+', 'человек в команде'],
+        ['35+', 'максимальная команда в подчинении'],
         ['1500+', 'b2b клиентов'],
       ],
     },
@@ -240,9 +240,9 @@
 
     const identity = document.getElementById('identity-lines');
     if (language === 'ru') {
-      identity.replaceChildren(element('p', '', 'Гражданство РФ · Дата рождения: 9 июня 1988 (38 лет) · Удаленный/гибридный формат · Готов к переезду и командировкам'));
+      identity.replaceChildren(element('p', '', 'Гражданство РФ · Дата рождения: 9 июня 1988 (38 лет)'));
     } else {
-      identity.replaceChildren(element('p', '', 'Russian citizenship · Date of birth: 9 June 1988 (38 years old) · Remote/hybrid format · Open to relocation and business travel'));
+      identity.replaceChildren(element('p', '', 'Russian citizenship · Date of birth: 9 June 1988 (38 years old)'));
     }
     document.getElementById('message-link').href = `mailto:${data.contact.email}`;
     document.getElementById('email-link').href = `mailto:${data.contact.email}`;
